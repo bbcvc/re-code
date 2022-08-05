@@ -1,5 +1,5 @@
 var obj = {
-  name: '小野森森',
+  name: '大雄',
   age: 34,
   info: {
     hobby: ['travel', 'piano', {
