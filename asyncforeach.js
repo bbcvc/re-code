@@ -10,7 +10,7 @@ Array.prototype.forEachAsync = async function (callback) {
       } else {
         fn(value, idx)
       }
-    })()
+    })(item, i)
   }
 }
 const sleep = (delay) => {
@@ -23,7 +23,7 @@ const sleep = (delay) => {
 
 [1, 2, 3, 4, 5].forEachAsync(async (item) => {
   if (item === 3) {
-    await sleep(2)
+    await sleep(2000)
     console.log(item)
   } else {
     console.log(item)
