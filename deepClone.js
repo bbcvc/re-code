@@ -33,6 +33,6 @@ function deepClone (origin, hashMap = new WeakMap()) {
 	return target
 }
 const deepObj = deepClone(obj)
-obj.name = "小红书"
+obj.name = "修改name"
 console.log(obj)
 console.log(deepObj)
